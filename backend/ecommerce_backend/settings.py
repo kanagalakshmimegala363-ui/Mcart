@@ -108,6 +108,9 @@ DATABASES = {
 # If AIVEN_DB_HOST is set in backend/.env, the cloud database is used
 # INSTEAD of the local one above. Remove it from .env to go back to local.
 if os.environ.get('AIVEN_DB_HOST'):
+    ca_path = os.environ.get('AIVEN_DB_CA_PATH', str(BASE_DIR / 'certs' / 'ca.pem'))
+    if not os.path.isabs(ca_path):
+        ca_path = str(BASE_DIR / ca_path)
     DATABASES['default'] = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get('AIVEN_DB_NAME', 'defaultdb'),
@@ -117,7 +120,7 @@ if os.environ.get('AIVEN_DB_HOST'):
         'PORT': os.environ.get('AIVEN_DB_PORT', '3306'),
         'OPTIONS': {
             'charset': 'utf8mb4',
-            'ssl': {'ca': os.environ.get('AIVEN_DB_CA_PATH', str(BASE_DIR / 'certs' / 'ca.pem'))},
+            'ssl': {'ca': ca_path},
         },
     }
 
