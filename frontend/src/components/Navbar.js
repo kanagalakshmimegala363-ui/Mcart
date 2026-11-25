@@ -5,15 +5,15 @@ import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
 
 const TRENDING_SEARCHES = [
-  'Silk Saree',
-  'Smart Watch',
-  'Wireless Mouse',
-  'Gaming Keyboard',
-  'Denim Jacket',
-  'Anarkali Kurti',
-  'Electric Kettle',
+  'Kashmiri Saffron',
+  'Pure A2 Desi Ghee',
+  'Royal Basmati Rice',
+  'Banarasi Silk Saree',
+  'Over-Ear ANC Headphones',
+  'AMOLED Smartwatch',
+  'Cold-Pressed Olive Oil',
+  'Royal Velvet Oud Perfume',
   'Atomic Habits',
-  'Face Serum',
 ];
 
 export default function Navbar() {
@@ -103,7 +103,7 @@ export default function Navbar() {
               <i className="bi bi-chevron-down small-chevron"></i>
             </button>
             <span className="utility-badge">
-              <i className="bi bi-lightning-charge-fill"></i> Super Saver Deals Live! Extra ₹150 OFF
+              <i className="bi bi-gem"></i> Mcart Royal Privilege: Complimentary White-Glove Delivery & Express Dispatch
             </span>
           </div>
 
@@ -153,13 +153,13 @@ export default function Navbar() {
       <header className="main-navbar">
         <div className="main-navbar__inner">
           {/* Brand Logo */}
-          <Link to="/" className="navbar-brand-pro" aria-label="Mcart Home">
+          <Link to="/" className="navbar-brand-pro" aria-label="Mcart Royal Atelier Home">
             <span className="brand-logo-icon">
-              <i className="bi bi-bag-heart-fill"></i>
+              <i className="bi bi-gem"></i>
             </span>
             <div className="brand-logo-text">
               <span className="brand-main">M<span className="brand-accent">cart</span></span>
-              <span className="brand-tagline">Explore • Save • Smile</span>
+              <span className="brand-tagline">ROYAL ATELIER & ESSENTIALS</span>
             </div>
           </Link>
 
@@ -172,14 +172,15 @@ export default function Navbar() {
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 aria-label="Filter by department"
               >
-                <option value="">All Categories</option>
-                <option value="1">Electronics</option>
-                <option value="2">Men's Fashion</option>
-                <option value="3">Women's Fashion</option>
-                <option value="4">Beauty & Care</option>
-                <option value="5">Home & Kitchen</option>
-                <option value="6">Home Decor</option>
-                <option value="7">Books & Learning</option>
+                <option value="">All Collections</option>
+                <option value="Groceries & Gourmet">Groceries & Gourmet</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Men's Fashion">Men's Fashion</option>
+                <option value="Women's Fashion">Women's Fashion</option>
+                <option value="Beauty & Personal Care">Beauty & Fragrance</option>
+                <option value="Home & Kitchen">Home & Kitchen</option>
+                <option value="Home Decor & Lighting">Decor & Lighting</option>
+                <option value="Books & Learning">Books & Collector</option>
               </select>
 
               <div className="search-input-wrap">

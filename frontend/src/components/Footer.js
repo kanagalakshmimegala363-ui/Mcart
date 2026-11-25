@@ -41,8 +41,8 @@ export default function Footer() {
             <i className="bi bi-truck"></i>
           </div>
           <div className="footer-trust-text">
-            <h4>Free & Fast Delivery</h4>
-            <p>On orders above ₹499 across 27,000+ PIN codes</p>
+            <h4>White-Glove Delivery</h4>
+            <p>Complimentary on orders above ₹499 across 27,000+ PIN codes</p>
           </div>
         </div>
 
@@ -51,18 +51,18 @@ export default function Footer() {
             <i className="bi bi-arrow-repeat"></i>
           </div>
           <div className="footer-trust-text">
-            <h4>7-Day Easy Returns</h4>
-            <p>Hassle-free doorstep pickup & instant refund</p>
+            <h4>7-Day Concierge Returns</h4>
+            <p>Effortless doorstep collection & instant credit refund</p>
           </div>
         </div>
 
         <div className="footer-trust-item">
           <div className="footer-trust-icon">
-            <i className="bi bi-patch-check-fill"></i>
+            <i className="bi bi-gem"></i>
           </div>
           <div className="footer-trust-text">
-            <h4>100% Genuine & Assured</h4>
-            <p>Strict quality-checked products directly from brands</p>
+            <h4>100% Royal Authenticity</h4>
+            <p>Verified heritage makers & certified organic estates</p>
           </div>
         </div>
 
@@ -71,8 +71,8 @@ export default function Footer() {
             <i className="bi bi-headset"></i>
           </div>
           <div className="footer-trust-text">
-            <h4>24x7 Customer Support</h4>
-            <p>Instant live chat, call & email assistance</p>
+            <h4>24x7 Royal Concierge</h4>
+            <p>Bespoke shopping assistance, live chat & phone support</p>
           </div>
         </div>
       </section>
@@ -82,28 +82,28 @@ export default function Footer() {
         <div className="footer-newsletter-content">
           <div className="footer-newsletter-headline">
             <span className="footer-newsletter-badge">
-              <i className="bi bi-tag-fill"></i> EXCLUSIVE SAVINGS
+              <i className="bi bi-gem"></i> ROYAL PRIVILEGE CIRCLE
             </span>
-            <h3>Get ₹150 OFF your first order!</h3>
-            <p>Subscribe to our newsletter for flash sales, secret coupons, and trending drops.</p>
+            <h3>Receive ₹150 OFF Your Premier Order</h3>
+            <p>Join our private salon for preview access to seasonal harvests, couture drops & private sales.</p>
           </div>
           <form className="footer-newsletter-form" onSubmit={handleSubscribe}>
             <div className="footer-input-group">
               <i className="bi bi-envelope footer-input-icon"></i>
               <input
                 type="email"
-                placeholder="Enter your email address"
+                placeholder="Enter your premier email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 aria-label="Email address for newsletter"
                 required
               />
               <button type="submit" className="footer-newsletter-btn">
-                <span>{subscribed ? 'Subscribed!' : 'Subscribe'}</span>
+                <span>{subscribed ? 'Privileged' : 'Join Salon'}</span>
                 <i className="bi bi-arrow-right"></i>
               </button>
             </div>
-            <span className="footer-form-subtext">No spam ever. Unsubscribe anytime.</span>
+            <span className="footer-form-subtext">Discreet & spam-free. Unsubscribe with one click.</span>
           </form>
         </div>
       </section>
@@ -112,16 +112,16 @@ export default function Footer() {
       <div className="footer-main-grid">
         {/* Column 1: Brand & About */}
         <div className="footer-col footer-col--brand">
-          <Link to="/" className="footer-brand" aria-label="Mcart Home">
+          <Link to="/" className="footer-brand" aria-label="Mcart Royal Home">
             <span className="footer-brand-mark">
-              <i className="bi bi-bag-heart-fill"></i>
+              <i className="bi bi-gem"></i>
             </span>
             <span className="footer-brand-name">
               M<span>cart</span>
             </span>
           </Link>
           <p className="footer-brand-desc">
-            India's destination for everyday essentials, premium tech, trendy fashion, and thoughtful lifestyle finds. Loved by over 10 million happy shoppers nationwide.
+            India's premier royal atelier and curated marketplace for artisanal groceries, luxury fashion, studio tech, and heirloom lifestyle treasures.
           </p>
 
           <div className="footer-helpline">

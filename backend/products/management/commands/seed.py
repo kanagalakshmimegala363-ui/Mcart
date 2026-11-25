@@ -12,6 +12,68 @@ from products.models import Category, Product
 
 # Every product has an exact, high-resolution, reliable image URL matched to its real display name.
 SAMPLE_DATA = {
+    'Groceries & Gourmet': [
+        (
+            'Royal Grade Kashmiri Mogra Saffron (1g Pure A++)', 549.00, 50, 4.9,
+            'Handpicked organic deep-red Kashmiri Mongra saffron stigmas with rich golden aroma and natural medicinal benefits.',
+            'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=800&fit=crop',
+        ),
+        (
+            'Cold-Pressed Extra Virgin Spanish Olive Oil 1L', 899.00, 40, 4.8,
+            'First cold-pressed single estate extra virgin olive oil with low acidity, perfect for dressings, cooking and dips.',
+            'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800&fit=crop',
+        ),
+        (
+            'Himalayan Raw Organic Wild Forest Honey 500g', 429.00, 65, 4.8,
+            'Unpasteurized 100% natural wild honeycomb nectar collected ethically from high-altitude Himalayan pine forests.',
+            'https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800&fit=crop',
+        ),
+        (
+            'Imperial Reserve Royal Basmati Rice (Aged 2 Years, 5kg)', 799.00, 45, 4.9,
+            'Extra-long slender pearl grains aged traditionally for exceptional elongation, fragrant aroma, and royal biryani feasts.',
+            'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800&fit=crop',
+        ),
+        (
+            'Premium California Jumbo Roasted Almonds 500g', 499.00, 80, 4.7,
+            'Crispy lightly salted oven-roasted whole almonds packed with heart-healthy antioxidants, Vitamin E, and protein.',
+            'https://images.unsplash.com/photo-1508061252445-5350f3ab0a55?w=800&fit=crop',
+        ),
+        (
+            'Organic Darjeeling First Flush Whole Leaf Golden Tea 250g', 649.00, 35, 4.9,
+            'Champagne of teas from certified heritage estates, featuring delicate floral notes, muscatel flavour and golden liquor.',
+            'https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=800&fit=crop',
+        ),
+        (
+            'Vedic Bilona Pure Gir Cow A2 Desi Ghee 500ml', 999.00, 30, 4.9,
+            'Traditional hand-churned cultured curd bilona ghee from grass-fed Gir cows, rich in granular texture and nutty fragrance.',
+            'https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?w=800&fit=crop',
+        ),
+        (
+            'Royal Select Medjool Jumbo Dates 500g', 599.00, 55, 4.8,
+            'Luscious soft caramel-like royal dates with natural sweetness, potassium, and wholesome dietary fiber.',
+            'https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=800&fit=crop',
+        ),
+        (
+            'Artisanal 85% Belgian Dark Chocolate Truffles Gift Box', 799.00, 40, 4.7,
+            'Handmade single-origin cocoa bean truffles dusted with fair-trade Dutch cocoa and infused with sea salt crystals.',
+            'https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=800&fit=crop',
+        ),
+        (
+            'Organic Golden Turmeric & Ginger Herbal Wellness Elixir', 349.00, 60, 4.6,
+            'Pure Lakadong high-curcumin turmeric root powder blended with black pepper and ginger for daily vitality.',
+            'https://images.unsplash.com/photo-1615485290176-068b556b6c2f?w=800&fit=crop',
+        ),
+        (
+            'Exotic Alphonso Handcrafted Mango Reserve Pulp 1kg', 399.00, 50, 4.7,
+            'Naturally ripened Ratnagiri Alphonso mango pulp with zero artificial preservatives or sweeteners.',
+            'https://images.unsplash.com/photo-1553279768-865429fa0078?w=800&fit=crop',
+        ),
+        (
+            'Organic Whole Roasted Berry, Seed & Nut Trail Mix 400g', 449.00, 70, 4.6,
+            'Crunchy blend of chia seeds, pumpkin seeds, cranberries, blueberries, roasted cashews, and golden raisins.',
+            'https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=800&fit=crop',
+        ),
+    ],
     'Electronics': [
         (
             'Logitech M330 Silent Wireless Mouse', 499.00, 45, 4.6,
