@@ -103,18 +103,16 @@ export default function Navbar() {
               <i className="bi bi-chevron-down small-chevron"></i>
             </button>
             <span className="utility-badge">
-              <i className="bi bi-gem"></i> Mcart Royal Privilege: Complimentary White-Glove Delivery & Express Dispatch
+              <i className="bi bi-stars"></i> Complimentary Express Delivery & Artisan Packaging on all orders above ₹499
             </span>
           </div>
 
           <div className="utility-right">
-            <Link to="/" className="utility-link">Sell on Mcart</Link>
-            <span className="utility-sep">|</span>
-            <Link to="/orders" className="utility-link">Track Order</Link>
-            <span className="utility-sep">|</span>
-            <span className="utility-link"><i className="bi bi-headset"></i> 24x7 Help</span>
-            <span className="utility-sep">|</span>
-            <span className="utility-link"><i className="bi bi-phone"></i> Download App</span>
+            <Link to="/" className="utility-link">Artisan Studio</Link>
+            <span className="utility-sep">•</span>
+            <Link to="/orders" className="utility-link">Track Delivery</Link>
+            <span className="utility-sep">•</span>
+            <span className="utility-link"><i className="bi bi-headset"></i> 24x7 Concierge</span>
           </div>
         </div>
       </div>
@@ -153,15 +151,26 @@ export default function Navbar() {
       <header className="main-navbar">
         <div className="main-navbar__inner">
           {/* Brand Logo */}
-          <Link to="/" className="navbar-brand-pro" aria-label="Mcart Royal Atelier Home">
+          <Link to="/" className="navbar-brand-pro" aria-label="Mcart Atelier Home">
             <span className="brand-logo-icon">
-              <i className="bi bi-gem"></i>
+              <i className="bi bi-bag-heart-fill"></i>
             </span>
             <div className="brand-logo-text">
               <span className="brand-main">M<span className="brand-accent">cart</span></span>
-              <span className="brand-tagline">ROYAL ATELIER & ESSENTIALS</span>
+              <span className="brand-tagline">ATELIER & LIVING</span>
             </div>
           </Link>
+
+          {/* Department Navigation Links - Aesthetic E-Commerce Fashion/Living style */}
+          <nav className="navbar-nav-categories d-none d-xl-flex" aria-label="Main Categories">
+            <Link to="/?category=1" className="nav-cat-item">GROCERIES</Link>
+            <Link to="/?category=3" className="nav-cat-item">MEN</Link>
+            <Link to="/?category=4" className="nav-cat-item">WOMEN</Link>
+            <Link to="/?category=5" className="nav-cat-item">BEAUTY</Link>
+            <Link to="/?category=2" className="nav-cat-item">ELECTRONICS</Link>
+            <Link to="/?category=6" className="nav-cat-item">HOME & LIVING</Link>
+            <Link to="/?category=7" className="nav-cat-item">DECOR</Link>
+          </nav>
 
           {/* Search Bar with Category Select & Suggestions */}
           <div className="search-container" ref={searchBoxRef}>

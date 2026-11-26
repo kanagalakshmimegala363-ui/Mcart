@@ -24,40 +24,40 @@ const CATEGORY_AVATARS = {
 
 const DEFAULT_AVATAR = 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=200&h=200&fit=crop';
 
-// Royal Hero promotional banners
+// Warm aesthetic promotional banners (Cream, Caramel, Chocolate Brown)
 const HERO_SLIDES = [
   {
     id: 1,
-    tag: 'ROYAL TECH & AUDIO ATELIER',
-    title: 'Up to 60% Privileged Savings on Studio Peripherals',
-    sub: 'Elevate your workspace with Hi-Res ANC headsets, custom tactile keyboards and precision crafted accessories.',
-    bg: 'linear-gradient(135deg, #090e1a 0%, #172554 45%, #1e1b4b 100%)',
-    cta: 'Explore Electronics',
-    categorySearch: 'electronics',
-    badge: 'Royal Privilege Deal',
-    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&fit=crop',
+    tag: 'AESTHETIC LIVING & COUTURE',
+    title: 'Up to 60% Off on Curated Autumn & Festive Essentials',
+    sub: 'Explore timeless earth tones, warm woolens, premium silk ensembles and handcrafted artisan collections.',
+    bg: 'linear-gradient(135deg, #2D1A12 0%, #4A2E1F 50%, #6E4730 100%)',
+    cta: 'Explore Collection',
+    categorySearch: 'fashion',
+    badge: 'Trending Collection',
+    image: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&fit=crop',
   },
   {
     id: 2,
-    tag: 'GOURMET & ARTISANAL HARVEST',
-    title: 'Kashmiri Saffron, A2 Desi Ghee & Raw Honey',
-    sub: 'Pure Himalayan organic harvest, traditional cold-pressed oils, and royal kitchen reserve delicacies.',
-    bg: 'linear-gradient(135deg, #06261c 0%, #064e3b 45%, #14532d 100%)',
-    cta: 'Shop Groceries & Gourmet',
+    tag: 'GOURMET & ARTISANAL PANTRY',
+    title: 'Pure Kashmiri Saffron, Cold-Pressed Oils & Organic Honey',
+    sub: 'Single-origin Himalayan spices, cold-pressed Spanish olive oils, and certified organic delicacies for healthy living.',
+    bg: 'linear-gradient(135deg, #3A2312 0%, #52341D 50%, #7A4E2B 100%)',
+    cta: 'Shop Gourmet Pantry',
     categorySearch: 'groceries',
     badge: '100% Organic Certified',
     image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=600&fit=crop',
   },
   {
     id: 3,
-    tag: 'HERITAGE BANARASI & COUTURE',
-    title: 'Handwoven Kanjivaram Silks & Festive Luxury',
-    sub: 'Intricate golden zari jaal weaves, pure Anarkali couture sets and heirloom jewelry designed for grandeur.',
-    bg: 'linear-gradient(135deg, #2b0614 0%, #831843 50%, #4c0519 100%)',
-    cta: 'Shop Women’s Fashion',
-    categorySearch: 'saree',
-    badge: 'Heritage Craft',
-    image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&fit=crop',
+    tag: 'STUDIO AUDIO & TECH ATELIER',
+    title: 'Hi-Res Acoustics, Wooden Peripherals & Minimalist Gear',
+    sub: 'Elevate your aesthetic workspace with studio-grade noise-cancelling headphones and tactile mechanical keyboards.',
+    bg: 'linear-gradient(135deg, #1F1510 0%, #382419 50%, #4D3324 100%)',
+    cta: 'Shop Audio & Tech',
+    categorySearch: 'electronics',
+    badge: 'Editor’s Choice',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&fit=crop',
   },
 ];
 
@@ -296,6 +296,33 @@ export default function Home() {
         </div>
       </nav>
 
+      {/* Aesthetic Promo Coupon Banner (Myntra/Aesthetic ticket style) */}
+      {!search && !categoryId && (
+        <section className="promo-ticket-strip">
+          <div className="promo-ticket-card">
+            <div className="promo-ticket-left">
+              <span className="ticket-badge">AUTUMN ATELIER</span>
+              <div className="ticket-discount-text">
+                <span className="ticket-sub">SPECIAL VOUCHER</span>
+                <h2>FLAT ₹400 OFF</h2>
+              </div>
+            </div>
+            <div className="promo-ticket-divider">
+              <span className="notch notch-top"></span>
+              <span className="notch notch-bottom"></span>
+            </div>
+            <div className="promo-ticket-right">
+              <span className="ticket-instruction">Use Code on checkout:</span>
+              <div className="ticket-coupon-box">
+                <strong>MCART400</strong>
+                <span className="ticket-copy-tag">T&C Apply</span>
+              </div>
+              <small className="ticket-extra">Valid on fashion, groceries & decor orders above ₹1,999</small>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Hero Carousel Banner Section */}
       {!search && !categoryId && (
         <section className="hero-carousel-section" aria-label="Featured Offers">
@@ -373,11 +400,11 @@ export default function Home() {
         <section className="flash-sale-strip">
           <div className="flash-sale-left">
             <div className="flash-fire-icon">
-              <i className="bi bi-gem"></i>
+              <i className="bi bi-clock-history"></i>
             </div>
             <div className="flash-title-block">
-              <h3>👑 ROYAL PRIVILEGE DEALS OF THE DAY</h3>
-              <p>Limited heirloom drops, organic gourmet harvests & studio electronics at privileged member prices.</p>
+              <h3>AUTUMN CURATED PICKS & DAILY DROPS</h3>
+              <p>Limited handcrafted drops, organic gourmet harvests & studio electronics at special member prices.</p>
             </div>
           </div>
 
